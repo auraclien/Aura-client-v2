@@ -15,7 +15,7 @@ public class AuraButton extends ButtonWidget {
     }
 
     @Override
-    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
+    void render(DrawContext context, int mouseX, int mouseY, float delta) {
         isHovered = mouseX >= this.getX() && mouseX <= this.getX() + this.width && 
                     mouseY >= this.getY() && mouseY <= this.getY() + this.height;
 
