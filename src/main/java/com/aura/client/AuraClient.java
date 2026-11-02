@@ -12,6 +12,7 @@ public class AuraClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        // Новый способ регистрации клавиши для 1.21.4
         openMenuKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.auraclient.open_menu",
                 InputUtil.Type.KEYSYM,
