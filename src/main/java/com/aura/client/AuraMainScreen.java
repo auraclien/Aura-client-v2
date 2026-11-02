@@ -31,7 +31,7 @@ public class AuraMainScreen extends Screen {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        this.applyBlur(delta);
+        this.applyBlur();
         context.fill(startX, startY, startX + menuWidth, startY + menuHeight, 0xEE050505);
         context.drawVerticalLine(startX + 120, startY + 40, startY + menuHeight - 10, 0xFF333333);
         context.drawVerticalLine(startX + 300, startY + 40, startY + menuHeight - 10, 0xFF333333);
